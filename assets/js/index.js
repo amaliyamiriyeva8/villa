@@ -30,11 +30,11 @@ fetch(`http://localhost:3000/villa`)
 .then(res=>res.json())
 .then(data=>{
     secondArr=data;
-    firstArr=firstArr.length || search.value ? firstArr : data;
+    firstArr=firstArr.length || search.value ? secondArr : data;
     blog_2.innerHTML="";
     axios.get(`http://localhost:3000/favorites`)
     .then(fav=>{
-            secondArr.slice(page-3,page).forEach(element => {
+            secondArr.slice(0,page).forEach(element => {
                 if(fav.data.find(favEl=>favEl.id===element.id)){
                 blog_2.innerHTML+=`
                 <div class="js">
@@ -119,6 +119,7 @@ function AddFavEl(id){
 search.addEventListener("input", function (e) {
     firstArr =secondArr;
     firstArr = firstArr.filter((element) =>
+    console.log(element),
       element.title.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
     );
    loadMore()

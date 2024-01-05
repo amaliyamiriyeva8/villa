@@ -25,7 +25,7 @@ form.addEventListener("submit",(e)=>{
     let src=file_add.files[0]
     const reader=new FileReader()
     reader.readAsDataURL(src)
-    window.location="index.html"
+   
     reader.onload=(e)=>{
     object={
         img:e.target.result,
@@ -36,5 +36,5 @@ form.addEventListener("submit",(e)=>{
    
     }
    
-   
+    window.location="index.html"
 })
