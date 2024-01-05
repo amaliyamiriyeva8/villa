@@ -1,0 +1,800 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: normal;
+  font-size: normal;
+}
+
+#hand {
+  position: fixed;
+  font-size: 35px;
+  bottom: 20px;
+  right: 20px;
+  cursor: cell;
+  color: #e61c5d;
+}
+
+.container1 {
+  max-width: 1200px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+
+.nav {
+  top: -500px;
+  transition: all 1.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+}
+.nav .navbar em {
+  font-size: 30px;
+  color: white;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  padding-left: 15px;
+}
+.nav .navbar .icon {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .navbar .icon #list {
+  margin-top: 10px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.nav .navbar .icon #fav {
+  margin-top: 14px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.nav .navbar .icon #add {
+  margin-top: 6px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.nav .list-style {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: white;
+  display: none;
+}
+.nav .list-style ul {
+  padding-left: 15px;
+  margin-bottom: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.nav .list-style ul li {
+  font-weight: 600;
+  color: #e61c5d;
+  font-size: 20px;
+}
+
+.section1 {
+  width: 100%;
+  background-image: linear-gradient(rgba(25, 26, 27, 0.52), rgba(25, 26, 27, 0.52)), url("https://preview.colorlib.com/theme/villa/img/hero_1.jpg.webp");
+  padding: 241px 0px;
+  background-position: center;
+  background-size: cover;
+}
+.section1 .first {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section1 .first h1 {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.section1 .first h1 span {
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.section1 .first p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+}
+.section1 .first .btns {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+  max-width: 400px;
+}
+.section1 .first .btns .btn-1 {
+  background-color: #e61c5d;
+  text-align: center;
+  color: white;
+  border-radius: 35px;
+  border-style: none;
+  padding: 10px 0px;
+  width: 245px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  transition: all 0.6s ease;
+}
+.section1 .first .btns .btn-1:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  background-color: #c92a5c;
+}
+.section1 .first .btns .btn-2 {
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  border-radius: 35px;
+  border: 2px solid white;
+  padding: 10px 0px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.6s ease;
+}
+.section1 .first .btns .btn-2:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.visit {
+  margin-top: 90px;
+  width: 100%;
+  padding: 23px 0px;
+}
+.visit .can {
+  display: flex;
+  justify-content: flex-start;
+}
+.visit .can p {
+  color: rgb(187, 187, 187);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.section2 {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.section2 .second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.section2 .second .img {
+  width: 23%;
+}
+.section2 .second .img img {
+  width: 100%;
+}
+.section2 .second .img h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 20px;
+  transition: all 0.6s ease;
+}
+.section2 .second .img h2:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  color: #e61c5d;
+}
+.section2 .second .img .star-word {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section2 .second .img .star-word i {
+  color: #e61c5d;
+  font-size: 14px;
+}
+.section2 .second .img .star-word p {
+  color: rgb(187, 187, 187);
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.life {
+  width: 100%;
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.life .enjoy {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.life .enjoy h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 80px;
+}
+.life .enjoy p {
+  text-align: center;
+  font-size: 19px;
+  color: rgb(119, 119, 119);
+  font-weight: 500;
+}
+
+.section3 {
+  position: relative;
+  bottom: -140px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .slide-show {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .slide-show #carouselExampleIndicators {
+  box-shadow: 0px 1px 10px rgb(118, 118, 118);
+  width: 80%;
+}
+
+.section4 {
+  width: 100%;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+  padding: 120px 0px;
+}
+.section4 .blog {
+  padding-top: 60px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .blog .blog-1 {
+  padding-top: 90px;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section4 .blog .blog-1 h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 80px;
+}
+.section4 .blog .blog-1 p {
+  text-align: center;
+  font-size: 19px;
+  color: rgb(119, 119, 119);
+  font-weight: 500;
+}
+.section4 .blog .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section4 .blog .input input {
+  width: 60%;
+  padding: 5px 0px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #e61c5d;
+}
+.section4 .blog .blog-2 {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.section4 .blog .blog-2 .js {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgb(154, 154, 154);
+}
+.section4 .blog .blog-2 .js img {
+  width: 100%;
+}
+.section4 .blog .blog-2 .js .js-1 {
+  width: 90%;
+  padding: 10px 0px;
+}
+.section4 .blog .blog-2 .js .js-1 h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: rgb(207, 207, 207);
+}
+.section4 .blog .blog-2 .js .js-1 p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 27px;
+  transition: all 0.6s ease;
+}
+.section4 .blog .blog-2 .js .js-1 p:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  color: #e61c5d;
+}
+.section4 .blog .blog-2 .js .js-1 .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.section4 .blog .blog-2 .js .js-1 .button button {
+  background-color: #e61c5d;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 8px 0px;
+  width: 33%;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  transition: all 0.6s ease;
+}
+.section4 .blog .blog-2 .js .js-1 .button button:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  background-color: #c92a5c;
+}
+
+.main {
+  width: 100%;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+  height: 100vh;
+}
+.main .blog {
+  padding-top: 60px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .blog .blog-1 {
+  padding-top: 90px;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .blog .blog-1 h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 80px;
+}
+.main .blog .blog-1 p {
+  text-align: center;
+  font-size: 19px;
+  color: rgb(119, 119, 119);
+  font-weight: 500;
+}
+.main .blog .blog-2 {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.main .blog .blog-2 .js {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgb(154, 154, 154);
+}
+.main .blog .blog-2 .js img {
+  width: 100%;
+}
+.main .blog .blog-2 .js .js-1 {
+  width: 90%;
+  padding: 10px 0px;
+}
+.main .blog .blog-2 .js .js-1 h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: rgb(207, 207, 207);
+}
+.main .blog .blog-2 .js .js-1 p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 27px;
+  transition: all 0.6s ease;
+}
+.main .blog .blog-2 .js .js-1 p:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  color: #e61c5d;
+}
+.main .come {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.main .come button {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  background-color: #e61c5d;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 11px 0px;
+  width: 180px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  transition: all 0.6s ease;
+}
+.main .come button:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  background-color: #c92a5c;
+}
+
+.load {
+  width: 100%;
+  padding: 100px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load button {
+  background-color: #e61c5d;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 15px 0px;
+  width: 205px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  transition: all 0.6s ease;
+}
+.load button:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  background-color: #c92a5c;
+}
+
+footer {
+  width: 100%;
+  padding: 40px 0px;
+  background-color: rgb(37, 34, 34);
+}
+footer .end {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .end p {
+  color: rgb(188, 188, 188);
+  font-size: 17px;
+}
+footer .end .icons {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .end .icons i {
+  font-size: 18px;
+  color: rgb(188, 188, 188);
+  transition: all 0.5s ease;
+}
+footer .end .icons i:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.update-page {
+  width: 100%;
+  padding: 100px 0px;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+  height: 100vh;
+}
+.update-page .update {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.update-page .update h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.update-page .update .form-el {
+  width: 31%;
+  padding: 70px 0px;
+  background-color: #e61c5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgb(177, 177, 177);
+}
+.update-page .update .form-el form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.update-page .update .form-el form input {
+  cursor: pointer;
+  padding: 9px 0px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #e61c5d;
+}
+.update-page .update .form-el form label {
+  font-size: 20px;
+  color: white;
+}
+
+.add-page {
+  width: 100%;
+  padding: 100px 0px;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+  height: 100vh;
+}
+.add-page .add {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.add-page .add h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.add-page .add .form-el {
+  width: 31%;
+  padding: 70px 0px;
+  background-color: navy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgb(177, 177, 177);
+}
+.add-page .add .form-el form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.add-page .add .form-el form input {
+  cursor: pointer;
+  padding: 9px 0px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid transparent;
+}
+.add-page .add .form-el form label {
+  font-size: 20px;
+  color: white;
+}
+
+#delete {
+  margin-top: 10px;
+  background-color: navy;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  padding: 7px 0px;
+  width: 120px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  transition: all 0.6s ease;
+}
+#delete:hover {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  background-color: rgb(1, 1, 73);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+  .section1 {
+    width: 100%;
+  }
+  .section1 .first h1 {
+    font-size: 35px;
+  }
+  .section1 .first h1 span {
+    font-size: 38px;
+    letter-spacing: 0px;
+  }
+  .section1 .first p {
+    font-size: 18px;
+  }
+  .section2 {
+    width: 100%;
+  }
+  .section2 .second {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .section2 .second .img {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .section2 {
+    width: 100%;
+  }
+  .section2 .second {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section2 .second .img {
+    width: 100%;
+  }
+  .life {
+    width: 100%;
+  }
+  .life .enjoy {
+    max-width: 85%;
+  }
+  .life .enjoy h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .life .enjoy p {
+    font-size: 16px;
+  }
+  .section4 .blog {
+    width: 100%;
+  }
+  .section4 .blog .blog-1 {
+    max-width: 85%;
+  }
+  .section4 .blog .blog-1 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .section4 .blog .blog-1 p {
+    font-size: 16px;
+  }
+  .section4 .blog .blog-2 {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .section4 .blog .blog-2 .js {
+    width: 45%;
+  }
+  footer .end {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0px 20px;
+  }
+  .section1 {
+    width: 100%;
+  }
+  .section1 .first {
+    width: 100%;
+  }
+  .section1 .first .btns {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section1 .first .btns .btn-1 {
+    width: 100%;
+  }
+  .section1 .first .btns .btn-2 {
+    width: 100%;
+  }
+  .section2 .second .img {
+    width: 100%;
+  }
+  .life {
+    width: 100%;
+  }
+  .life .enjoy {
+    max-width: 98%;
+  }
+  .section4 .blog .blog-2 {
+    flex-direction: column;
+  }
+  .section4 .blog .blog-2 .js {
+    width: 100%;
+  }
+  footer .end {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}/*# sourceMappingURL=style.css.map */
